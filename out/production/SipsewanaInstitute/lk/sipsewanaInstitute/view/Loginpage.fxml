@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginRoot" prefHeight="462.0" prefWidth="782.0" style="-fx-background-color: #EAF0C2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sipsewanaInstitute.controller.LoginPageController">
+   <children>
+      <Label layoutX="320.0" layoutY="86.0" text="Signing in">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtusername" alignment="CENTER" focusColor="#626519" labelFloat="true" layoutX="270.0" layoutY="185.0" onAction="#onActionUsername" prefHeight="25.0" prefWidth="242.0" promptText="username" unFocusColor="#626519">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtpassword" alignment="CENTER" focusColor="#626519" labelFloat="true" layoutX="270.0" layoutY="279.0" prefHeight="25.0" prefWidth="242.0" promptText="password" unFocusColor="#626519">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="362.0" layoutY="365.0" onAction="#loginOnAction" ripplerFill="#69e11f" text="Enter">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

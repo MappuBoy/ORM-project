@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="studentRoot" prefHeight="462.0" prefWidth="783.0" style="-fx-background-color: EAF0C2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sipsewanaInstitute.controller.StudentPageController">
+   <children>
+      <JFXTextField fx:id="stuIdtxt" focusColor="#626519" labelFloat="true" layoutX="59.0" layoutY="96.0" onAction="#stuIdonAction" prefHeight="25.0" prefWidth="164.0" promptText="Student Id" unFocusColor="#626519" />
+      <Label layoutX="314.0" layoutY="27.0" text="Student Form">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtemail" focusColor="#626519" labelFloat="true" layoutX="545.0" layoutY="178.0" prefHeight="25.0" prefWidth="173.0" promptText="email" unFocusColor="#626519" />
+      <JFXTextField fx:id="txtNiC" focusColor="#626519" labelFloat="true" layoutX="296.0" layoutY="178.0" onAction="#nicOnAction" prefHeight="25.0" prefWidth="173.0" promptText="NIC" unFocusColor="#626519" />
+      <JFXTextField fx:id="txtTpNumber" focusColor="#626519" labelFloat="true" layoutX="59.0" layoutY="178.0" onAction="#tpnumberOnAction" prefHeight="25.0" prefWidth="173.0" promptText="Tp number" unFocusColor="#626519" />
+      <JFXTextField fx:id="txtAddress" focusColor="#626519" labelFloat="true" layoutX="545.0" layoutY="96.0" onAction="#stuAddressonAction" prefHeight="25.0" prefWidth="173.0" promptText="Address" unFocusColor="#626519" />
+      <JFXTextField fx:id="txtName" focusColor="#626519" labelFloat="true" layoutX="296.0" layoutY="96.0" onAction="#nameonAction" prefHeight="25.0" prefWidth="173.0" promptText="Name" unFocusColor="#626519" />
+      <JFXButton buttonType="RAISED" layoutX="171.0" layoutY="239.0" onAction="#addStudentbtn" ripplerFill="#34f858" text="Add Student" textFill="#196807" />
+      <JFXButton buttonType="RAISED" layoutX="338.0" layoutY="239.0" onAction="#updateStdentOnAction" ripplerFill="#09d2ff" text="Update Student" />
+      <JFXButton buttonType="RAISED" layoutX="537.0" layoutY="239.0" onAction="#deleteStudentOnAction" ripplerFill="RED" text="Delete Student" textFill="RED" />
+      <JFXButton buttonType="RAISED" layoutX="223.0" layoutY="96.0" onAction="#Searchstudentbtn" prefHeight="25.0" prefWidth="32.0" ripplerFill="#34f858" text="O-" textFill="#196807" />
+      <JFXButton buttonType="RAISED" layoutX="358.0" layoutY="418.0" onAction="#backBtn" ripplerFill="#09d2ff" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="studetntb" layoutX="31.0" layoutY="272.0" prefHeight="134.0" prefWidth="738.0">
+         <columns>
+            <TableColumn fx:id="stuIdtb" prefWidth="105.0" text="Student Id" />
+            <TableColumn fx:id="stuNametb" prefWidth="136.0" text="Name" />
+            <TableColumn fx:id="stuAddresstb" prefWidth="109.0" text="Address" />
+            <TableColumn fx:id="stutpnumbertb" prefWidth="105.0" text="tp number" />
+            <TableColumn fx:id="stunictb" prefWidth="135.0" text="NIC" />
+            <TableColumn fx:id="stuemailtb" prefWidth="147.0" text="email" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

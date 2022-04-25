@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ProgramRoot" prefHeight="462.0" prefWidth="783.0" style="-fx-background-color: EAF0C2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sipsewanaInstitute.controller.CourseWorkController">
+    <children>
+        <JFXTextField fx:id="txtproId" focusColor="#626519" labelFloat="true" layoutX="134.0" layoutY="96.0" onAction="#onActionProId" prefHeight="25.0" prefWidth="164.0" promptText="Program Id" unFocusColor="#626519" />
+        <Label layoutX="333.0" layoutY="26.0" text="Program Form">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtproduration" focusColor="#626519" labelFloat="true" layoutX="126.0" layoutY="178.0" onAction="#onActionDuration" prefHeight="25.0" prefWidth="173.0" promptText="Duration" unFocusColor="#626519" />
+        <JFXTextField fx:id="txtprofees" focusColor="#626519" labelFloat="true" layoutX="510.0" layoutY="178.0" prefHeight="25.0" prefWidth="173.0" promptText="Fees" unFocusColor="#626519" />
+        <JFXTextField fx:id="txtproname" focusColor="#626519" labelFloat="true" layoutX="498.0" layoutY="96.0" onAction="#onActionProName" prefHeight="25.0" prefWidth="173.0" promptText="Program" unFocusColor="#626519" />
+        <JFXButton buttonType="RAISED" layoutX="171.0" layoutY="239.0" onAction="#addProgramBtn" ripplerFill="#34f858" text="Add Program" textFill="#196807" />
+        <JFXButton buttonType="RAISED" layoutX="338.0" layoutY="239.0" onAction="#updateProgramBtn" ripplerFill="#09d2ff" text="Update Program" />
+        <JFXButton buttonType="RAISED" layoutX="537.0" layoutY="239.0" onAction="#deleteaddProgramBtn" ripplerFill="RED" text="Delete Program" textFill="RED" />
+        <JFXButton buttonType="RAISED" layoutX="298.0" layoutY="96.0" onAction="#searchbtn" prefHeight="25.0" prefWidth="32.0" ripplerFill="#34f858" text="O-" textFill="#196807" />
+        <JFXButton buttonType="RAISED" layoutX="358.0" layoutY="418.0" onAction="#backBtn" ripplerFill="#09d2ff" text="Back">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+      <TableView fx:id="protb" layoutX="14.0" layoutY="277.0" prefHeight="134.0" prefWidth="738.0">
+         <columns>
+            <TableColumn fx:id="proIdtb" prefWidth="168.0" text="Program Id" />
+            <TableColumn fx:id="pronametb" prefWidth="144.0" text="Program" />
+            <TableColumn fx:id="durationtb" prefWidth="237.0" text="Duration" />
+            <TableColumn fx:id="fesstb" prefWidth="188.0" text="Fees" />
+            <TableColumn fx:id="durationtb1" prefWidth="237.0" text="Duration" />
+         </columns>
+      </TableView>
+    </children>
+</AnchorPane>
